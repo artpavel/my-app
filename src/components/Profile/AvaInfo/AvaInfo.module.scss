@@ -1,0 +1,23 @@
+.logo_info{
+  display: flex;
+  margin-bottom: 20px;
+  .foto{
+    width: 20%;
+    height: 50px;
+    margin-right: 20px;
+    img{
+      width: 100px;
+      height: 100px;
+
+    }
+  }
+  .info{
+    h2{
+      margin-bottom: 15px;
+      font-size: 18px;
+    }
+    p{
+      font-size: 14px;
+    }
+  }
+}
