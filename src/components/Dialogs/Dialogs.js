@@ -1,5 +1,6 @@
 import './Dialogs.module.css'
 import cl from './Dialogs.module.css'
+import {NavLink} from "react-router-dom";
 
 
 const Dialogs = (props) => {
@@ -8,22 +9,22 @@ const Dialogs = (props) => {
             <h2>DIALOGS</h2>
             <div className={cl.dialogsItems}>
                 <div className={`${cl.dialog} ${cl.active}`}>
-                    Dimas
+                    <NavLink to="/dialogs/1">Dimas</NavLink>
                 </div>
                 <div className={cl.dialog}>
-                    Andrey
+                    <NavLink to="/dialogs/2">Andrey</NavLink>
                 </div>
                 <div className={cl.dialog}>
-                    Sveta
+                    <NavLink to="/dialogs/3">Sveta</NavLink>
                 </div>
                 <div className={cl.dialog}>
-                    Sasha
+                    <NavLink to="/dialogs/4">Sasha</NavLink>
                 </div>
                 <div className={cl.dialog}>
-                    Victor
+                    <NavLink to="/dialogs/5">Victor</NavLink>
                 </div>
                 <div className={cl.dialog}>
-                    Valera
+                    <NavLink to="/dialogs/6">Valera</NavLink>
                 </div>
             </div>
             <div>
