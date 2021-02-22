@@ -1,28 +1,28 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-img{
+img {
   display: block;
   width: 100%;
 
 }
 
 
-
-a{
+a {
   display: inline-block;
   color: white;
   text-decoration: none;
   cursor: pointer;
-  &:hover{
+
+  &:hover {
     color: azure;
   }
 }
 
-.app-wrapper{
+.app-wrapper {
   max-width: 1940px;
   padding-left: 20px;
   padding-right: 20px;
@@ -34,6 +34,14 @@ a{
   grid-row-gap: 0px;
 }
 
+.app-wrapper-content {
+  grid-area: 2 / 2 / 3 / 7;
+
+  & img:first-child {
+    height: 100px;
+    margin-bottom: 10px;
+  }
+}
 
 
 

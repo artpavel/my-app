@@ -7,7 +7,7 @@ import Banner from "./Banner/Banner";
 
 const Profile = () =>{
     return(
-        <div className={classes.content}>
+        <div>
             <Banner/>
             <AvaInfo/>
             <MyPosts/>
