@@ -1,15 +1,19 @@
 import React from 'react';
-import s from './MyPosts.module.css'
 import Post from "./Post/Post";
 import FieldInput from "./FieldInput/FieldInput";
 
 
-const MyPosts = () => {
+
+
+const MyPosts = (props) => {
+
+    let postsElements =
+        props.postsData.map( p => <Post message={p.post}/>)
+
     return (
         <div>
             <FieldInput/>
-            <Post message='Hi, how are you?'/>
-            <Post message="It's my first post"/>
+            {postsElements}
         </div>
     )
 }
