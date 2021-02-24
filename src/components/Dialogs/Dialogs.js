@@ -7,11 +7,11 @@ import Message from "./Message/Message";
 
 const Dialogs = (props) => {
 
-    let dialogsElements = props.dialogsData.map(
+    let dialogsElements = props.state.dialogsData.map(
         object => < DialogItem name = {object.name } id = { object.id }/>
     )
 
-    let messagesElements = props.messagesData.map(
+    let messagesElements = props.state.messagesData.map(
         object => < Message message = { object.message }/>
     )
 
@@ -19,11 +19,11 @@ const Dialogs = (props) => {
         <div className={cl.dialogs}>
             <h2>DIALOGS</h2>
             <div className={cl.dialogsItems}>
-                {dialogsElements}
+                { dialogsElements }
             </div>
 
             <div className={cl.messages}>
-                {messagesElements}
+                { messagesElements }
             </div>
         </div>
     )
