@@ -30,6 +30,13 @@ let state = {
             {id: 1, name: 'Dimas'},
             {id: 2, name: 'Andrey'},
             {id: 3, name: 'Sveta'}
+        ],
+        menusNav: [
+            {id: 1, path: '/profile', text: 'Profile'},
+            {id: 2, path: '/dialogs', text: 'Messages'},
+            {id: 3, path: '/news', text: 'News'},
+            {id: 4, path: '/music', text: 'Music'},
+            {id: 5, path: '/settings', text: 'Settings'},
         ]
     }
 }
