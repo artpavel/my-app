@@ -1,4 +1,8 @@
 let state = {
+    img: [
+        {id: 1, image: 'logo192.png'}
+    ],
+
     dialogPage:{
         messagesData: [
             {id: 1, message: 'Hi'},
