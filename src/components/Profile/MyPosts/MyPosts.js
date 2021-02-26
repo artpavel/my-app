@@ -12,7 +12,7 @@ const MyPosts = (props) => {
 
     return (
         <div>
-            <FieldInput/>
+            <FieldInput addPost = { props.addPost }/>
             {postsElements}
         </div>
     )

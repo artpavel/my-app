@@ -1,7 +1,4 @@
 let state = {
-    img: [
-        {id: 1, image: 'logo192.png'}
-    ],
 
     dialogPage:{
         messagesData: [
@@ -43,6 +40,16 @@ let state = {
             {id: 5, path: '/settings', text: 'Settings'},
         ]
     }
+}
+
+// функция добавки сообщения
+export let addPost = (postMessage) =>{
+    debugger;
+    let newPost = {
+        id: 5,
+        post: postMessage,
+    }
+    state.profilePage.postsData.push(newPost)
 }
 
 export default state

@@ -11,7 +11,8 @@ const Profile = (props) =>{
         <div>
             <Banner/>
             <AvaInfo/>
-            <MyPosts postsData = { props.state.postsData }/>
+            <MyPosts postsData = { props.state.postsData }
+                     addPost = { props.addPost }/>
         </div>
     )
 }
