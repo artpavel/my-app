@@ -1,6 +1,8 @@
+import {rerenderEntireTree} from "../render";
+
 let state = {
 
-    dialogPage:{
+    dialogPage: {
         messagesData: [
             {id: 1, message: 'Hi'},
             {id: 2, message: 'How is your it-kamasutra?'},
@@ -25,8 +27,9 @@ let state = {
             {id: 3, post: "Я пробую это на Реакте"},
             {id: 4, post: "И пока все хорошо понимаю"},
         ],
+        newPostText: 'Pavel learn React. Я что-то напечатал'
     },
-    sidebar:{
+    sidebar: {
         displaysNav: [
             {id: 1, name: 'Dimas'},
             {id: 2, name: 'Andrey'},
@@ -43,13 +46,20 @@ let state = {
 }
 
 // функция добавки сообщения
-export let addPost = (postMessage) =>{
-    debugger;
+export let addPost = () => {
+
     let newPost = {
         id: 5,
-        post: postMessage,
+        post: state.profilePage.newPostText,
     }
     state.profilePage.postsData.push(newPost)
+    rerenderEntireTree(state)
+}
+
+export let updateNewPostText = (postMessage) => {
+
+    state.profilePage.newPostText = postMessage
+    rerenderEntireTree(state)
 }
 
 export default state

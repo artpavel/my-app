@@ -12,8 +12,10 @@ const MyPosts = (props) => {
 
     return (
         <div>
-            <FieldInput addPost = { props.addPost }/>
-            {postsElements}
+            <FieldInput addPost = { props.addPost }
+                        newPostText = { props.newPostText }
+                        updateNewPostText = { props.updateNewPostText }/>
+            { postsElements }
         </div>
     )
 }
